@@ -1,0 +1,45 @@
+name: ServiceNow CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - feature/*
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  create-pull-request:
+    if: github.ref != 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          base: main
+          title: "Automated PR from ${{ github.ref_name }}"
+          body: "This PR was auto-created from ${{ github.ref_name }}"
+          delete-branch: true
+
+  deploy-to-servicenow:
+    if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Deploy to ServiceNow
+        run: |
+          curl -X POST "https://${{ secrets.SN_INSTANCE }}.service-now.com/api/sn_cicd/app_repo/install" \
+          --user ${{ secrets.SN_USERNAME }}:${{ secrets.SN_PASSWORD }} \
+          --header "Content-Type: application/json" \
+          --data '{
+              "application_scope": "x_your_scope_id",
+              "version": "1.0.0",
+              "auto_upgrade_base_app": true
+          }'
