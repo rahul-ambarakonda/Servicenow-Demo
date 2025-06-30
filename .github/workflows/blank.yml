@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - feature/*
+      - main
   pull_request:
     branches:
       - main
@@ -11,7 +12,7 @@ on:
 
 jobs:
   create-pull-request:
-    if: github.ref != 'refs/heads/main'
+    if: startsWith(github.ref, 'refs/heads/feature/')
     runs-on: ubuntu-latest
     environment: QA
     steps:
@@ -21,14 +22,14 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}  # Use built-in token to avoid secret issues
           base: main
           title: "Automated PR from ${{ github.ref_name }}"
           body: "This PR was auto-created from ${{ github.ref_name }}"
           delete-branch: true
 
   deploy-to-servicenow:
-    if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
+    if: github.ref == 'refs/heads/main'  # Deploy only on push to main
     runs-on: ubuntu-latest
     environment: QA
     steps:
