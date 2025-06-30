@@ -41,7 +41,7 @@ jobs:
           --user ${{ secrets.SN_USERNAME }}:${{ secrets.SN_PASSWORD }} \
           --header "Content-Type: application/json" \
           --data '{
-              "application_scope": "x_your_scope_id",
+              "application_scope": "x_1791345_demo_d_0",
               "version": "1.0.0",
               "auto_upgrade_base_app": true
           }'
