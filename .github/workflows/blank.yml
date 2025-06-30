@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - feature/*
-      - main
   pull_request:
     branches:
       - main
@@ -12,7 +11,7 @@ on:
 
 jobs:
   create-pull-request:
-    if: startsWith(github.ref, 'refs/heads/feature/')
+    if: github.ref != 'refs/heads/main'
     runs-on: ubuntu-latest
     environment: QA
     steps:
@@ -22,7 +21,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}  # Use built-in token to avoid secret issues
+          token: ${{ secrets.GH_TOKEN }}
           base: main
           title: "Automated PR from ${{ github.ref_name }}"
           body: "This PR was auto-created from ${{ github.ref_name }}"
