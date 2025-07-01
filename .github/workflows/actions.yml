@@ -1,4 +1,4 @@
-name: ServiceNow QA Deployment
+name: Deploy to ServiceNow QA
 
 on:
   push:
@@ -12,26 +12,28 @@ on:
 
 jobs:
   create-pr-to-qa:
-    if: github.ref == 'refs/heads/dev'
+    if: github.ref == 'refs/heads/sn_instances/dev313587'
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Create Pull Request from dev to qa
+      - name: Create Pull Request from dev to main (QA)
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GH_TOKEN }}
-          base: sn_instances/dev313587
-          branch: main
-          title: "Auto PR: Promote dev changes to QA"
-          body: "This PR promotes changes from `dev` to `qa` branch."
-          delete-branch: false  # We don't want to delete the dev branch
+          base: main
+          branch: sn_instances/dev313587
+          title: "Auto PR: Promote dev changes to main (QA)"
+          body: "This PR promotes changes from `sn_instances/dev313587` to `main`."
+          delete-branch: false
 
   deploy-to-servicenow-qa:
-    if: github.event_name == 'pull_request' && github.event.pull_request.merged == true && github.base_ref == 'qa'
+    if: github.event_name == 'pull_request' && github.event.pull_request.merged == true && github.base_ref == 'main'
     runs-on: ubuntu-latest
     environment: QA
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
