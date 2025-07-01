@@ -1,4 +1,4 @@
-name: Deploy to ServiceNow QA
+name: Auto PR and Deploy to ServiceNow QA
 
 on:
   push:
@@ -12,22 +12,24 @@ on:
 
 jobs:
   create-pr-to-qa:
-    if: github.ref == 'refs/heads/sn_instances/dev313587'
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/sn_instances/dev313587'
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Create Pull Request from dev to main (QA)
+      - name: Create Pull Request to QA (main)
         uses: peter-evans/create-pull-request@v5
         with:
-          token: ${{ secrets.GH_TOKEN }}
-          base: main
+          token: ${{ secrets.GITHUB_TOKEN }}
           branch: sn_instances/dev313587
-          title: "Auto PR: Promote dev changes to main (QA)"
-          body: "This PR promotes changes from `sn_instances/dev313587` to `main`."
+          base: main
+          title: "Promote: Dev changes to QA"
+          body: |
+            This pull request was automatically created to promote changes from `sn_instances/dev313587` to `main` (QA).
           delete-branch: false
+          draft: false
 
   deploy-to-servicenow-qa:
     if: github.event_name == 'pull_request' && github.event.pull_request.merged == true && github.base_ref == 'main'
