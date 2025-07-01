@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_datasource_attribute">
+    <ais_datasource_attribute action="INSERT_OR_UPDATE">
+        <attribute display_value="index_attachments">2dd8f14753320010ffaaddeeff7b1293</attribute>
+        <datasource display_value="New_Data Table">87a966d447a2a210fb7ba09f016d4395</datasource>
+        <source>x_1791345_demo_d_0_new_data</source>
+        <sys_class_name>ais_datasource_attribute</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-01 10:26:45</sys_created_on>
+        <sys_id>87a966d447a2a210fb7ba09f016d4396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Demo devops" source="x_1791345_demo_d_0">158e603e47926210fb7ba09f016d43f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo devops">158e603e47926210fb7ba09f016d43f2</sys_scope>
+        <sys_update_name>ais_datasource_attribute_87a966d447a2a210fb7ba09f016d4396</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-01 10:26:45</sys_updated_on>
+        <value>false</value>
+    </ais_datasource_attribute>
+</record_update>
