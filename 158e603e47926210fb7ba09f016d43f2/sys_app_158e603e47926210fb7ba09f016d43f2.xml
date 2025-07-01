@@ -13,7 +13,7 @@
         <license_category>none</license_category>
         <license_definition/>
         <license_model>none</license_model>
-        <logo>4a8e2c7a47926210fb7ba09f016d4339</logo>
+        <logo/>
         <menu/>
         <name>Demo devops</name>
         <package_json/>
@@ -32,9 +32,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-26 09:37:48</sys_created_on>
         <sys_id>158e603e47926210fb7ba09f016d43f2</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-26 09:37:52</sys_updated_on>
+        <sys_updated_on>2025-07-01 10:30:22</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
