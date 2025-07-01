@@ -1,3 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="8913ea9c4762a210fb7ba09f016d43bc" label="Test" max_length="40" name="x_1791345_demo_d_0_test" type="collection"/>
+    <element db_object_id="8913ea9c4762a210fb7ba09f016d43bc" label="Test" max_length="40" name="x_1791345_demo_d_0_test" text_index="true" type="collection"/>
 </database>

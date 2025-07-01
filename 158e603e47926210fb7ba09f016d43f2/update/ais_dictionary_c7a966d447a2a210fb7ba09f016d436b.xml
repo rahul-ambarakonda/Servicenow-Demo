@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_dictionary">
+    <ais_dictionary action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <auto_refresh>24</auto_refresh>
+        <blocked_field/>
+        <case_sensitive>false</case_sensitive>
+        <data_source>x_1791345_demo_d_0_test,x_1791345_demo_d_0_demo,x_1791345_demo_d_0_new_data,x_1791345_demo_d_0_teacher</data_source>
+        <derived>true</derived>
+        <field/>
+        <label>demo-devops Search Profile Default Spell Check Dictionary</label>
+        <last_derived/>
+        <locale>en</locale>
+        <name>x_1791345_demo_d_0_demo_devops_search_profile_default_spell_check_dictionary</name>
+        <publish_id/>
+        <punctuation_sensitive>false</punctuation_sensitive>
+        <state>DRAFT</state>
+        <sys_class_name>ais_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-01 10:26:44</sys_created_on>
+        <sys_id>c7a966d447a2a210fb7ba09f016d436b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_1791345_demo_d_0_demo_devops_search_profile_default_spell_check_dictionary</sys_name>
+        <sys_package display_value="Demo devops" source="x_1791345_demo_d_0">158e603e47926210fb7ba09f016d43f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo devops">158e603e47926210fb7ba09f016d43f2</sys_scope>
+        <sys_update_name>ais_dictionary_c7a966d447a2a210fb7ba09f016d436b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-01 10:26:46</sys_updated_on>
+        <type>SPELLCHECK</type>
+    </ais_dictionary>
+</record_update>

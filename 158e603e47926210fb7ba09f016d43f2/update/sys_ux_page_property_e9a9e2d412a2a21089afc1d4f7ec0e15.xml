@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Tabs Configuration</description>
+        <name>chrome_tab</name>
+        <page display_value="Demo devops">25a9e2d495a2a21011a34f9854403223</page>
+        <required_translations>[ {
+  "message" : "New Demo",
+  "comment" : ""
+}, {
+  "message" : "New New_Data",
+  "comment" : ""
+}, {
+  "message" : "New Teacher",
+  "comment" : ""
+}, {
+  "message" : "New Test",
+  "comment" : ""
+} ]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-01 10:26:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>e9a9e2d412a2a21089afc1d4f7ec0e15</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>chrome_tab</sys_name>
+        <sys_package display_value="Demo devops" source="x_1791345_demo_d_0">158e603e47926210fb7ba09f016d43f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo devops">158e603e47926210fb7ba09f016d43f2</sys_scope>
+        <sys_update_name>sys_ux_page_property_e9a9e2d412a2a21089afc1d4f7ec0e15</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-01 10:26:44</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_1791345_demo_d_0.25a9e2d495a2a21011a34f9854403223.root.global.chrome_tab</unique_name>
+        <value>{"contextual":["record"],"newTabMenu":[{"label":{"translatable":true,"message":"New Demo"},"routeInfo":{"route":"record","fields":{"table":"x_1791345_demo_d_0_demo","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1791345_demo_d_0_demo","canCreate":true}}},{"label":{"translatable":true,"message":"New New_Data"},"routeInfo":{"route":"record","fields":{"table":"x_1791345_demo_d_0_new_data","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1791345_demo_d_0_new_data","canCreate":true}}},{"label":{"translatable":true,"message":"New Teacher"},"routeInfo":{"route":"record","fields":{"table":"x_1791345_demo_d_0_teacher","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1791345_demo_d_0_teacher","canCreate":true}}},{"label":{"translatable":true,"message":"New Test"},"routeInfo":{"route":"record","fields":{"table":"x_1791345_demo_d_0_test","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1791345_demo_d_0_test","canCreate":true}}}],"maxMainTabLimit":10,"maxTotalSubTabLimit":30}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=e9a9e2d412a2a21089afc1d4f7ec0e15"/>
+</record_update>

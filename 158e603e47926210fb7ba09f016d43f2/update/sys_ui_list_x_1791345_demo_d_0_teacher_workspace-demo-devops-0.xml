@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_1791345_demo_d_0_teacher" version="2" view="workspace-demo-devops-0">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="x_1791345_demo_d_0_teacher" element="NULL" name="x_1791345_demo_d_0_teacher" parent="NULL" relationship="NULL" sys_domain="global" view="eda9e2d45da2a2106f96e57baf951c1a">64b92ad447a2a210fb7ba09f016d4337</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-01 10:26:50</sys_created_on>
+            <sys_id>20b92ad447a2a210fb7ba09f016d4338</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-01 10:26:50</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_by</element>
+            <list_id display_value="x_1791345_demo_d_0_teacher" element="NULL" name="x_1791345_demo_d_0_teacher" parent="NULL" relationship="NULL" sys_domain="global" view="eda9e2d45da2a2106f96e57baf951c1a">64b92ad447a2a210fb7ba09f016d4337</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-01 10:26:50</sys_created_on>
+            <sys_id>24b92ad447a2a210fb7ba09f016d4338</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-01 10:26:50</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="x_1791345_demo_d_0_teacher" element="NULL" name="x_1791345_demo_d_0_teacher" parent="NULL" relationship="NULL" sys_domain="global" view="eda9e2d45da2a2106f96e57baf951c1a">64b92ad447a2a210fb7ba09f016d4337</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-01 10:26:50</sys_created_on>
+            <sys_id>28b92ad447a2a210fb7ba09f016d4338</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-01 10:26:50</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_by</element>
+            <list_id display_value="x_1791345_demo_d_0_teacher" element="NULL" name="x_1791345_demo_d_0_teacher" parent="NULL" relationship="NULL" sys_domain="global" view="eda9e2d45da2a2106f96e57baf951c1a">64b92ad447a2a210fb7ba09f016d4337</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-01 10:26:50</sys_created_on>
+            <sys_id>2cb92ad447a2a210fb7ba09f016d4338</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-01 10:26:50</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_mod_count</element>
+            <list_id display_value="x_1791345_demo_d_0_teacher" element="NULL" name="x_1791345_demo_d_0_teacher" parent="NULL" relationship="NULL" sys_domain="global" view="eda9e2d45da2a2106f96e57baf951c1a">64b92ad447a2a210fb7ba09f016d4337</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-01 10:26:50</sys_created_on>
+            <sys_id>20b92ad447a2a210fb7ba09f016d4339</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-01 10:26:50</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_1791345_demo_d_0_teacher</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-01 10:26:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>64b92ad447a2a210fb7ba09f016d4337</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1791345_demo_d_0_teacher</sys_name>
+            <sys_package display_value="Demo devops" source="x_1791345_demo_d_0">158e603e47926210fb7ba09f016d43f2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Demo devops">158e603e47926210fb7ba09f016d43f2</sys_scope>
+            <sys_update_name>sys_ui_list_x_1791345_demo_d_0_teacher_workspace-demo-devops-0</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-01 10:26:50</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace Demo devops 0" name="workspace-demo-devops-0">eda9e2d45da2a2106f96e57baf951c1a</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>
