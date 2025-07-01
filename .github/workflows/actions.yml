@@ -1,47 +1,48 @@
-name: ServiceNow CI/CD Pipeline
+name: ServiceNow QA Deployment
 
 on:
   push:
     branches:
-      - feature/*
+      - sn_instances/dev313587
   pull_request:
+    types: [closed]
     branches:
       - main
   workflow_dispatch:
 
 jobs:
-  create-pull-request:
-    if: github.ref != 'refs/heads/main'
+  create-pr-to-qa:
+    if: github.ref == 'refs/heads/dev'
     runs-on: ubuntu-latest
-    environment: QA
     steps:
-      - name: Checkout Code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Create Pull Request
+      - name: Create Pull Request from dev to qa
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GH_TOKEN }}
-          base: main
-          title: "Automated PR from ${{ github.ref_name }}"
-          body: "This PR was auto-created from ${{ github.ref_name }}"
-          delete-branch: true
+          base: sn_instances/dev313587
+          branch: main
+          title: "Auto PR: Promote dev changes to QA"
+          body: "This PR promotes changes from `dev` to `qa` branch."
+          delete-branch: false  # We don't want to delete the dev branch
 
-  deploy-to-servicenow:
-    if: github.ref == 'refs/heads/main'  # Deploy only on push to main
+  deploy-to-servicenow-qa:
+    if: github.event_name == 'pull_request' && github.event.pull_request.merged == true && github.base_ref == 'qa'
     runs-on: ubuntu-latest
     environment: QA
     steps:
-      - name: Checkout Code
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Deploy to ServiceNow
+      - name: Deploy to ServiceNow QA
         run: |
           curl -X POST "https://${{ secrets.SN_INSTANCE }}.service-now.com/api/sn_cicd/app_repo/install" \
-          --user ${{ secrets.SN_USERNAME }}:${{ secrets.SN_PASSWORD }} \
-          --header "Content-Type: application/json" \
-          --data '{
-              "application_scope": "x_1791345_demo_d_0",
+            --user "${{ secrets.SN_USERNAME }}:${{ secrets.SN_PASSWORD }}" \
+            --header "Content-Type: application/json" \
+            --data '{
+              "application_scope": "x_your_scope_id",
               "version": "1.0.0",
               "auto_upgrade_base_app": true
-          }'
+            }'
